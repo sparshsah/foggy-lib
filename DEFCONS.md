@@ -1,3 +1,5 @@
+_Remark: Satisfying how these statuses line up in alphabetical order... :)_
+
 Closed issue status can be `CLOSED_DONE`, `CLOSED_WONTDO`, or `CLOSED_WORKSFORME`.
 
 We triage open accepted issues into the following priority levels:
@@ -16,4 +18,4 @@ We triage open accepted issues into the following priority levels:
   * `OPEN_DEFCON_2a`: BAU enhancement.
   * `OPEN_DEFCON_2b`: Long-term enhancement.
 
-Before acceptance, every issue is `NEW`.
+Before acceptance, every issue is `UNCONFIRMED`.
