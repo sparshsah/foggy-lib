@@ -11,7 +11,7 @@ git_em_down_scotty() {
 }
 
 git_me_up_scotty() {
-  git pull --no-edit && git branch && git add . && git status && git commit -m ok && git push && git_status
+  git status && git pull --no-edit && git branch && git add . && git status && git commit -m ok && git push && git_status
 }
 
 git_rebase() {
