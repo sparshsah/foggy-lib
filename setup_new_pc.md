@@ -12,10 +12,10 @@
 6. Add GitHub to known hosts `ssh-keyscan github.com >> ~/.ssh/known_hosts`
 7. `mkdir` your directory structure, and `git clone` whatever repos you want
 8. [Install Anaconda](https://docs.anaconda.com/free/anaconda/install/mac-os.html)
-    * You can keep it up-to-date [as follows](https://www.anaconda.com/blog/keeping-anaconda-date)
+    * You can keep it up-to-date [as](https://docs.anaconda.com/free/anaconda/install/update-version.html) [follows](https://www.anaconda.com/blog/keeping-anaconda-date)
     * [Create a new Python venv](https://docs.conda.io/projects/conda/en/latest/commands/create.html) with `conda create --name=py_venv python=3.xx anaconda` (replace `xx` with the desired version)
     * Tell zsh to automatically activate it at startup by adding the following to your `~/.zshrc`: `conda activate py_venv`
-    * You can upgrade Python every once in a while with `conda deactivate && conda remove --name=py_venv --all && conda create --name=py_venv python=3.xx anaconda`
+    * You can upgrade Python every once in a while with `conda deactivate && conda remove --name=py_venv --all && conda update conda && conda create --name=py_venv python=3.xx anaconda`
 9. Prepend to your PATH by adding the following to your `~/.zshrc`: `export PATH=/path/to/your/code:/path/to/more/code:$PATH`
 11. [Install VSCode](https://code.visualstudio.com/download), optionally turning on Settings Sync and opening your notes doc
 12. (optional) Set Safari to your favorite tabs: YouTube Music, Google Drive, Gmail, Amazon Prime Video, and Disney+
