@@ -29,7 +29,7 @@ class MyEnumAlreadyMarked(enum.Enum):
 import codebase.types.special_enum as special_enum
 
 +++ @enum.unique
-class MySpecialEnum(enum.Enum):
+class MySpecialEnum(special_enum.SpecialEnum):
     RED = "r"
     GREEN = "g"
     BLUE = "b"
@@ -53,17 +53,24 @@ for obj in pathlib.Path("/path/to/codebase").rglob("*.py"):
     wlines = []
     for (r, rline) in enumerate(rlines):
         if (
-            # for initial line, will underflow to end -- don't care
+            # skip enums already marked as unique
+            # for initial line, will underflow to last line -- don't care
             not rlines[r-1] == "@enum.unique\n"
             and rline.startswith("class ")
         ):
             if rline.endswith("enum.Enum):\n"):
+                # in preparation to add the current line, insert the decorator
                 wlines.append("@enum.unique\n")
-            if rline.endswith("strenum.StrEnum):\n"):
+            # the special enum must be handled specially
+            if rline.endswith("special_enum.SpecialEnum):\n"):
+                # if the file hasn't already imported the stdlib enum package,
+                # go to the top and import it
                 if "import enum\n" not in wlines:
-                    i = wlines.index("from thm.future import strenum\n")
+                    i = wlines.index("import codebase.types.special_enum as special_enum\n")
                     wlines.insert(i, "import enum\n")
+                # as above, insert the decorator
                 wlines.append("@enum.unique\n")
+        # finally, add the current line
         wlines.append(rline)
     with open(obj, "w") as f:
         f.writelines(wlines)
