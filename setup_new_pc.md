@@ -1,6 +1,6 @@
 # macOS
 
-0. Set dock location to LHS of screen
+0. Set dock location to LHS of screen (you can also save icon size and order as a plist)
 1. Turn off fucking AutoCorrect
     * System Settings > Keyboard > Input Sources > Edit > Correct Spelling Automatically
     * System Settings > Keyboard > Input Sources > Text Replacements
@@ -19,5 +19,3 @@
     * You can upgrade Python every once in a while with `conda deactivate && conda remove --name=py_venv --all && conda update conda && conda create --name=py_venv python anaconda`
 11. Prepend to your PATH by adding the following to your `~/.zshrc`: `export PATH=/path/to/your/code:/path/to/more/code:$PATH`
 12. [Install VSCode](https://code.visualstudio.com/download), optionally turning on Settings Sync and opening your notes doc
-13. (optional) Set your browser to your favorite tabs: YouTube Music, Google Drive, Gmail, Zoom, Amazon Prime Video, Disney+, etc
-14. (optional) Install iMovie from the App Store
