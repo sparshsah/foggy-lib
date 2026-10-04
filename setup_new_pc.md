@@ -1,9 +1,9 @@
 # macOS
 
-0. Set dock location to LHS of screen (you can also save icon size and order as a plist)
-1. Turn off fucking AutoCorrect
+0. Turn off fucking AutoCorrect
     * System Settings > Keyboard > Input Sources > Edit > Correct Spelling Automatically
     * System Settings > Keyboard > Input Sources > Text Replacements
+1. Set dock location to LHS of screen (you can also save icon size and order as a plist)
 2. Install Google Chrome and set it as your default browser
 3. Install XCode Command Line Tools with `xcode-select --install`
 4. Create a `.zshrc` with `touch ~/.zshrc`
