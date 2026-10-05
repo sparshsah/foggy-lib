@@ -5,7 +5,7 @@
     * System Settings > Keyboard > Input Sources > Text Replacements
 1. Set dock location to LHS of screen (you can also save/restore location/size/order as a plist)
 2. Question: How can you manage Terminal background color/transparency as a plist?
-3. Install Google Chrome and set it as your default browser
+3. Install Google Chrome and set it as your default browser (and set file downloads destination to "Ask Every Time")
 4. Install XCode Command Line Tools with `xcode-select --install`
 5. Create a `.zshrc` with `touch ~/.zshrc`
 6. [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
