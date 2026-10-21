@@ -14,7 +14,7 @@
 - Tell zsh to automatically activate it at startup by adding the following to your `~/.zshrc`: `ssh-add --apple-load-keychain`
 - [Add it to GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 - Add GitHub to known hosts `ssh-keyscan github.com >> ~/.ssh/known_hosts`
-- `mkdir` your directory structure, and `git clone` whatever repos you want
+- `mkdir` your directory structure (e.g. `~/Documents/repos/...`), and `git clone` whatever repos you want
 - [Install Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install/mac-cli-install)
   - Create a fresh Python virtual environment with `conda create --name=py_venv python anaconda`
   - Tell zsh to automatically activate it at startup by adding the following to your `~/.zshrc`: `conda activate py_venv`
