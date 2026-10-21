@@ -6,6 +6,7 @@
 - Set dock location to LHS of screen (you can also save/restore location/size/order as a plist)
 - Question: How can you manage Terminal background color/transparency as a plist?
 - Install Google Chrome and set it as your default browser (and set file downloads destination to "Ask Every Time")
+- [Install OpenAI Codex CLI](https://learn.chatgpt.com/docs/codex/cli#getting-started)
 - Install XCode Command Line Tools with `xcode-select --install`
 - Create a `.zshrc` with `touch ~/.zshrc`
 - [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
