@@ -16,4 +16,4 @@ We triage open accepted issues into the following priority levels:
   * `OPEN_DEFCON_2a`: BAU enhancement.
   * `OPEN_DEFCON_2b`: Long-term enhancement.
 
-Closed issue status can be `CLOSED_DONE`, `CLOSED_WONTDO`, or `CLOSED_WORKSFORME`.
+Closed issue status can be `CLOSED_WORKSFORME`, `CLOSED_DONE`, or `CLOSED_WONTDO`.
