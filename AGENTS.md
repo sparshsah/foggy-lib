@@ -9,8 +9,8 @@ With that said, I have some specific guidance for you in the cases below.
 - Comments should have enduring relevance to the code/workflow as it is,
   not how it came to be.
   - Avoid breadcrumbs from the development process (e.g.
-    "Based on <notebook>", "Step 5", "Fix 2",
-    "Originally computed in `_helper()` below").
+    `Based on <notebook>`, `Step 5`, `Fix 2`,
+    `Originally computed in _helper() below`).
     Exceptions:
     - Link to external context or details when a reader would benefit
       (e.g. A comment on hardcoded hyperparameters
