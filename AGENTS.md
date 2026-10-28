@@ -34,7 +34,9 @@ With that said, I have some specific guidance for you in the cases below.
   it's an established convention for importing from
   some standard-library or third-party package.
 - Annotate as `Final` and
-  prefer immutable types for containers (e.g. `frozenset`, `tuple`)
+  prefer immutable types for containers (e.g.
+  `frozenset`, `tuple`, even
+  [`frozendict`](https://docs.python.org/3/builtins/stdtypes.html#frozendict))
   when defining a constant.
 - Force keyword-only arguments when
   writing functions with many parameters
