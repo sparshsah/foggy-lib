@@ -38,9 +38,10 @@ With that said, I have some specific guidance for you in the cases below.
   `frozenset`, `tuple`, even
   [`frozendict`](https://docs.python.org/3/builtins/stdtypes.html#frozendict))
   when defining a constant.
+- Type-annotate function signatures.
 - Force keyword-only arguments when
   writing functions with many parameters
-  (e.g. `def f(*, a, b, c): ...`).
+  (e.g. `def f(*, a: bool, b: int, c: float): ...`).
 - Prefer abstract types for containers
   (e.g. `Collection`, `Sequence`, `Mapping`)
   when declaring a function parameter,
