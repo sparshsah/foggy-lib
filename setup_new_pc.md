@@ -6,6 +6,7 @@
 - Set dock location to LHS of screen (you can also save/restore location/size/order as a plist)
 - System Settings > Desktop & Dock > Mission Control > Automatically rearrange Spaces based on most recent use > OFF
 - Pin `~` to the LHS sidebar in Finder
+- Finder > Settings > Advanced > Show all filename extensions > ON
 - Install Google Chrome and set it as your default browser (and set file downloads destination to "Ask Every Time")
 - Question: How can you manage Terminal background color/transparency as a plist?
 - [Install OpenAI Codex CLI by `curl`ing the standalone script](https://learn.chatgpt.com/docs/codex/cli#getting-started)
