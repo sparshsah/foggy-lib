@@ -4,6 +4,7 @@
   - System Settings > Keyboard > Input Sources > Edit > Correct Spelling Automatically
   - System Settings > Keyboard > Input Sources > Text Replacements
 - Set dock location to LHS of screen (you can also save/restore location/size/order as a plist)
+- System Settings > Desktop & Dock > Hot Corners > Bottom Right > DESKTOP
 - System Settings > Desktop & Dock > Mission Control > Automatically rearrange Spaces based on most recent use > OFF
 - Pin `~` to the LHS sidebar in Finder
 - Finder > Settings > Advanced > Show all filename extensions > ON
