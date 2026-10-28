@@ -17,8 +17,8 @@ With that said, I have some specific guidance for you in the cases below.
       pointing to the notebook where they were tuned).
     - Call out and explain code location/order when
       it's fragile and future editors might be tempted to break it
-      (e.g. "`foo()` must run before `bar()` because
-      `foo()` synchronizes the global cache `bar()` reads").
+      (e.g. `foo() must run before bar() because
+      foo() synchronizes the global cache bar() reads`).
   - Don't justify good code by contrast to the bad code it replaced.
     If `logger.warning` is the right call,
     it doesn't need a comment explaining why it isn't a `print`.
