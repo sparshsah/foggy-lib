@@ -4,7 +4,7 @@ Write good code. You have the privilege and responsibility to
 use your judgment to follow best practices with up-to-date patterns in general.
 With that said, I have some specific guidance for you in the cases below.
 
-## Comments
+## Documentation
 
 - Comments should have enduring relevance to the code/workflow as it is,
   not how it came to be.
@@ -33,6 +33,8 @@ With that said, I have some specific guidance for you in the cases below.
   Fall through to `from ... import ...` syntax ONLY when
   it's an established convention for importing from
   some standard-library or third-party package.
+  - E.g. `import matplotlib.pyplot as plt`,
+    not `from matplotlib import pyplot as plt`.
 - Annotate as `Final` and
   prefer immutable types for containers (e.g.
   `frozenset`, `tuple`, even
@@ -41,7 +43,7 @@ With that said, I have some specific guidance for you in the cases below.
 - Type-annotate function signatures.
 - Force keyword-only arguments when
   writing functions with many parameters
-  (e.g. `def f(*, a: bool, b: int, c: float): ...`).
+  (e.g. `def f(*, a: bool, b: int, c: float) -> str: ...`).
 - Prefer abstract types for containers
   (e.g. `Collection`, `Sequence`, `Mapping`)
   when declaring a function parameter,
@@ -65,14 +67,14 @@ With that said, I have some specific guidance for you in the cases below.
   add a guard to make sure
   the prevalence of the underlying issue isn't too bad.
   - Specific guidance for loan-month panel datasets:
-    - Where possible, choose a reasonably tight threshold on
+    - When appropriate, choose a reasonably tight threshold on
       the number of affected _loans_, not just the number of affected rows.
       E.g. In a panel of 10 loans, each of which has 10 months of payment updates,
       "the first loan's monthly updates all have the problem" might be OK,
       whereas "every loan has exactly one problematic update" might need to be raised.
-      Perhaps it's a known age- or calendar-month-specific dynamic
-      that can be treated as a routine "happy path" adjustment,
-      or perhaps the root cause needs an upstream fix from the lender.
+      Perhaps the root cause needs an upstream fix from the lender,
+      or perhaps it's a known age- or calendar-month-specific dynamic
+      that should be treated as a routine "happy path" adjustment.
     - Moreover, once you've chosen an acceptable threshold (e.g. "<= 1% of loans"),
       double-check to make sure the latest 6 months of originations
       _also_ respect that overall threshold,
