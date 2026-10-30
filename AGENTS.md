@@ -56,6 +56,30 @@ With that said, I have some specific guidance for you in the cases below.
   over `override_value or default_value` resolution syntax.
   The latter can lead to nasty bugs when `override_value` is
   non-null but still falsy (e.g. `0` or `[]`).
+- Comma-separated values (list elements, function arguments, etc)
+  either fit on one line
+  or get exploded one-per-line with a trailing comma.
+  Yes:
+  ```python
+  def func_with_long_name(
+      param_with_long_name: bool,
+      another_param_with_long_name: int,
+  ) -> list[str]:
+      return [
+          "these",
+          "are",
+          "some",
+          "elements",
+      ]
+  ```
+  No:
+  ```python
+  def func_with_long_name(
+      param_with_long_name: bool, another_param_with_long_name: int
+  ) -> list[str]:
+      return ["these", "are",
+              "some", "elements"]
+  ```
 
 ## Working with Data
 
