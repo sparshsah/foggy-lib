@@ -109,8 +109,11 @@ With that said, I have some specific guidance for you in the cases below.
       Perhaps the root cause needs an upstream fix from the lender,
       or perhaps it's a known age- or calendar-month-specific dynamic
       that should be treated as a routine "happy path" adjustment.
-    - Moreover, once you've chosen an acceptable threshold (e.g. "<= 1% of loans"),
-      double-check to make sure the latest 6 months of originations
+    - Moreover, once you've chosen
+      an acceptable threshold (e.g. "<= 1% of loans"),
+      double-check to make sure
+      the most recent 6 months worth of origination cohorts
+      (AKA "latest 6 monthly vintages")
       _also_ respect that overall threshold,
       so that a recent bug doesn't slip through.
       E.g. `if overall_too_bad: raise ...; if latest_too_bad: raise ...;`.
