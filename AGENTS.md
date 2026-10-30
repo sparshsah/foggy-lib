@@ -33,6 +33,11 @@ With that said, I have some specific guidance for you in the cases below.
   Fall through to `from ... import ...` syntax ONLY when
   it's an established convention for importing from
   some standard-library or third-party package.
+  Two examples to drive the point home:
+  - E.g. `import my.own.module.containing.stats as stats`
+    not `from my.own.module.containing import stats`:
+    The preferred syntax remains preferred even when
+    the no-no syntax seems like it saves a few characters.
   - E.g. `import matplotlib.pyplot as plt`
     not `from matplotlib import pyplot as plt`:
     Even though MatPlotLib is a third-party package,
