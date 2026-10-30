@@ -33,8 +33,13 @@ With that said, I have some specific guidance for you in the cases below.
   Fall through to `from ... import ...` syntax ONLY when
   it's an established convention for importing from
   some standard-library or third-party package.
-  - E.g. `import matplotlib.pyplot as plt`,
-    not `from matplotlib import pyplot as plt`.
+  - E.g. `import matplotlib.pyplot as plt`
+    not `from matplotlib import pyplot as plt`:
+    Even though MatPlotLib is a third-party package,
+    the former avoids the `from ... import ...` syntax
+    (which is a no-no),
+    and there is no universal convention in favor of the latter
+    (which would be the only excuse for it).
 - Annotate as `Final` and
   prefer immutable types for containers (e.g.
   `frozenset`, `tuple`, even
