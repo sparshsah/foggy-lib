@@ -1,3 +1,5 @@
+# git convenience helpers
+
 git_status() {
   pwd &&
   git branch -vv &&
