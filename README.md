@@ -2,4 +2,4 @@
 
 author: [@sparshsah](https://github.com/sparshsah)
 
-utility packages, templates, and scripts
+base infra/tooling/utils
