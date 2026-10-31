@@ -1,6 +1,6 @@
 # macOS
 
-## Human/Manual Steps
+## Manual Steps
 
 - Turn off fucking AutoCorrect
   - System Settings > Keyboard > Input Sources > Edit > Correct Spelling Automatically
