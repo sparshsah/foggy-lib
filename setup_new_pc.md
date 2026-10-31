@@ -8,38 +8,41 @@ which for me usually does NOT run the Microsoft Windows OS.
 These tend to require hands and/or subjective taste,
 but are generally pretty safe.
 
-- Turn off fucking AutoCorrect
-  - System Settings > Keyboard > Input Sources > Edit > Correct Spelling Automatically
-  - System Settings > Keyboard > Input Sources > Text Replacements
-- Set dock location to LHS of screen (you can also save/restore location/size/order as a plist)
-- System Settings > Desktop & Dock > Hot Corners > Bottom Right > DESKTOP
-- System Settings > Desktop & Dock > Mission Control > Automatically rearrange Spaces based on most recent use > OFF
-- Pin `~` to the LHS sidebar in Finder
-- Finder > Settings > Advanced > Show all filename extensions > ON
-- Install Google Chrome
-  - Set it as your default browser
-  - Make sure AutoFill and Password Manager is OFF
-  - Set file downloads destination to "Ask Every Time"
+- Turn off fucking AutoCorrect:
+  - System Settings > Keyboard > Input Sources > Edit > Correct Spelling Automatically.
+  - System Settings > Keyboard > Input Sources > Text Replacements.
+- Set dock location to LHS of screen.
+  - You can also save/restore location/size/order as a plist.
+- System Settings > Desktop & Dock > Hot Corners > Bottom Right > DESKTOP.
+- System Settings > Desktop & Dock > Mission Control >
+  Automatically rearrange Spaces based on most recent use > OFF.
+- Pin `~` to the LHS sidebar in Finder.
+- Finder > Settings > Advanced > Show all filename extensions > ON.
+- Install Google Chrome.
+  - Set it as your default browser.
+  - Make sure AutoFill and Password Manager is OFF.
+  - Set file downloads destination to "Ask Every Time".
 - Set up Terminal profile (text background color dark, opacity 90%, etc).
-  You can export/import this bundle as a `.terminal` file.
-- [Install OpenAI Codex CLI by `curl`ing the standalone script](https://learn.chatgpt.com/docs/codex/cli#getting-started)
-  - The standalone script is relatively dependency-free and sets Codex up to auto-update smoothly
+  - You can export/import this bundle as a `.terminal` file.
+- [Install OpenAI Codex CLI by `curl`ing the standalone script](https://learn.chatgpt.com/docs/codex/cli#getting-started).
+  - The standalone script is relatively dependency-free
+    and sets Codex up to auto-update smoothly.
 
 ## Agent-Driven Steps
 
 These can be driven by an AI agent consulting the human owner as appropriate.
 Important: Make sure these steps are still consistent with latest up-to-date workflows/recipes!
 
-- Seed [AGENTS.md](https://github.com/sparshsah/foggy-lib/blob/main/AGENTS.md)
-- Install XCode Command Line Tools with `xcode-select --install`
-- Create a `.zshrc` with `touch ~/.zshrc`
+- Seed [AGENTS.md](https://github.com/sparshsah/foggy-lib/blob/main/AGENTS.md).
+- Install XCode Command Line Tools with `xcode-select --install`.
+- Create a `.zshrc` with `touch ~/.zshrc`.
 - Install [HomeBrew](https://brew.sh/) with
-  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-  - Also proceed with any appropriate immediate post-install instructions (environment setup, `brew doctor`, etc)
-  - You can periodically update with `brew update && brew upgrade && brew cleanup`
-- [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-- Tell zsh to automatically activate it at startup by adding the following to your `~/.zshrc`: `ssh-add --apple-load-keychain`
-- [Add it to GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`.
+  - Also proceed with any appropriate immediate post-install instructions (environment setup, `brew doctor`, etc).
+  - You can periodically update with `brew update && brew upgrade && brew cleanup`.
+- [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+- Tell zsh to automatically activate it at startup by adding the following to your `~/.zshrc`: `ssh-add --apple-load-keychain`.
+- [Add it to GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 - Add GitHub to known hosts:
   Run `ssh -T git@github.com`;
   On first connection,
@@ -48,11 +51,14 @@ Important: Make sure these steps are still consistent with latest up-to-date wor
   before accepting it.
   - Avoid the blind `ssh-keyscan github.com >> ~/.ssh/known_hosts`,
     which is susceptible to MitM attacks.
-- `mkdir` your directory structure (e.g. `~/Documents/repos/...`), and `git clone` whatever repos you want
-- [Install Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install/mac-cli-install)
-  - Create a fresh Python virtual environment with `conda create --name=py_venv python anaconda`
-  - You can activate it with `conda activate py_venv`
+- `mkdir` your directory structure (e.g. `~/Documents/repos/...`),
+  and `git clone` whatever repos you want.
+- [Install Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install/mac-cli-install).
+  - Create a fresh Python virtual environment with `conda create --name=py_venv python anaconda`.
+  - You can activate it with `conda activate py_venv`.
   - You can refresh/update/upgrade everything once in a while with
-    `conda deactivate && conda remove --name=py_venv --all && conda update conda && conda create --name=py_venv python anaconda`
-- Prepend to your PATH by adding the following to your `~/.zshrc`: `export PATH="/path/to/your/code:/path/to/more/code:$PATH"`
-- [Install VSCode](https://code.visualstudio.com/download), optionally turning on Settings Sync and opening your notes doc
+    `conda deactivate && conda remove --name=py_venv --all && conda update conda && conda create --name=py_venv python anaconda`.
+- Prepend to your PATH by adding the following to your `~/.zshrc`:
+  `export PATH="/path/to/your/code:/path/to/more/code:$PATH"`.
+- [Install VSCode](https://code.visualstudio.com/download),
+  optionally turning on Settings Sync and opening your notes doc.
