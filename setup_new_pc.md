@@ -1,6 +1,9 @@
 # macOS
 
-## Manual Steps
+## Human-Driven Steps
+
+These tend to require hands and/or subjective taste,
+but are generally pretty safe.
 
 - Turn off fucking AutoCorrect
   - System Settings > Keyboard > Input Sources > Edit > Correct Spelling Automatically
@@ -20,6 +23,7 @@
 
 ## Agent-Driven Steps
 
+These can be driven by an AI agent consulting the human owner as appropriate.
 Important: Make sure these steps are still consistent with latest up-to-date workflows/recipes!
 
 - Seed [AGENTS.md](https://github.com/sparshsah/foggy-lib/blob/main/AGENTS.md)
