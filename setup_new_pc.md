@@ -66,6 +66,7 @@ Important: Make sure these steps are still consistent with latest up-to-date wor
 - [Install Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install/mac-cli-install).
   - Create a fresh Python virtual environment with `conda create --name=py_venv python anaconda`.
   - You can activate it with `conda activate py_venv`.
+    Then, things like `jupyter lab` immediately work.
   - You can refresh/update/upgrade everything once in a while with
     `conda deactivate && conda remove --name=py_venv --all && conda update conda && conda create --name=py_venv python anaconda`.
   - TODO: Evaluate migrating from Anaconda
