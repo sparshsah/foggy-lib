@@ -10,12 +10,17 @@
 - System Settings > Desktop & Dock > Mission Control > Automatically rearrange Spaces based on most recent use > OFF
 - Pin `~` to the LHS sidebar in Finder
 - Finder > Settings > Advanced > Show all filename extensions > ON
-- Install Google Chrome and set it as your default browser (and set file downloads destination to "Ask Every Time")
+- Install Google Chrome
+  - Set it as your default browser
+  - Make sure AutoFill and Password Manager is OFF
+  - Set file downloads destination to "Ask Every Time"
 - Question: How can you manage Terminal background color/transparency as a plist?
 - [Install OpenAI Codex CLI by `curl`ing the standalone script](https://learn.chatgpt.com/docs/codex/cli#getting-started)
   - The standalone script is relatively dependency-free and sets Codex up to auto-update smoothly
 
 ## Agent-Driven Steps
+
+Important: Make sure these steps are still consistent with latest up-to-date workflows/recipes!
 
 - Seed [AGENTS.md](https://github.com/sparshsah/foggy-lib/blob/main/AGENTS.md)
 - Install XCode Command Line Tools with `xcode-select --install`
