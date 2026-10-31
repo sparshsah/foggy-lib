@@ -20,7 +20,8 @@ but are generally pretty safe.
   - Set it as your default browser
   - Make sure AutoFill and Password Manager is OFF
   - Set file downloads destination to "Ask Every Time"
-- Question: How can you manage Terminal background color/transparency as a plist?
+- Set up Terminal profile (text background color dark, opacity 90%, etc).
+  You can export/import this bundle as a `.terminal` file.
 - [Install OpenAI Codex CLI by `curl`ing the standalone script](https://learn.chatgpt.com/docs/codex/cli#getting-started)
   - The standalone script is relatively dependency-free and sets Codex up to auto-update smoothly
 
