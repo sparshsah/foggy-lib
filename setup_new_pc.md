@@ -40,7 +40,14 @@ Important: Make sure these steps are still consistent with latest up-to-date wor
 - [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - Tell zsh to automatically activate it at startup by adding the following to your `~/.zshrc`: `ssh-add --apple-load-keychain`
 - [Add it to GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-- Add GitHub to known hosts `ssh-keyscan github.com >> ~/.ssh/known_hosts`
+- Add GitHub to known hosts:
+  Run `ssh -T git@github.com`;
+  On first connection,
+  verify the displayed host-key fingerprint against
+  [GitHub's published fingerprints](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)
+  before accepting it.
+  - Avoid the blind `ssh-keyscan github.com >> ~/.ssh/known_hosts`,
+    which is susceptible to MitM attacks.
 - `mkdir` your directory structure (e.g. `~/Documents/repos/...`), and `git clone` whatever repos you want
 - [Install Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install/mac-cli-install)
   - Create a fresh Python virtual environment with `conda create --name=py_venv python anaconda`
