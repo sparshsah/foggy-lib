@@ -60,5 +60,5 @@ Important: Make sure these steps are still consistent with latest up-to-date wor
     `conda deactivate && conda remove --name=py_venv --all && conda update conda && conda create --name=py_venv python anaconda`.
 - Prepend to your PATH by adding the following to your `~/.zshrc`:
   `export PATH="/path/to/your/code:/path/to/more/code:$PATH"`.
-- [Install VSCode](https://code.visualstudio.com/download),
+- [Install VS Code](https://code.visualstudio.com/download),
   optionally turning on Settings Sync and opening your notes doc.
