@@ -1,8 +1,10 @@
+# Issue/Bug DEFCON Scheme
+
 Before acceptance, every issue is `UNCONFIRMED`.
 
 We triage open accepted issues into the following priority levels:
 * Security vulnerabilities:
-  * `OPEN_DEFCON_0a`: Chosen security scheme is fatally flawed (e.g. Classical RSA after quantum supremacy).
+  * `OPEN_DEFCON_0a`: Chosen security scheme is fatally flawed (e.g. classical RSA after quantum supremacy).
   * `OPEN_DEFCON_0b`: Chosen security scheme is theoretically sound, but implementation has a fundamental bug.
   * `OPEN_DEFCON_0c`: Chosen security scheme is theoretically sound and implementation is essentially correct,
                 but breaks in presence of a practical corner case (e.g. race condition).
