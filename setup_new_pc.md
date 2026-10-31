@@ -11,9 +11,12 @@
 - Install Google Chrome and set it as your default browser (and set file downloads destination to "Ask Every Time")
 - Question: How can you manage Terminal background color/transparency as a plist?
 - [Install OpenAI Codex CLI by `curl`ing the standalone script](https://learn.chatgpt.com/docs/codex/cli#getting-started)
+  - The standalone script is relatively dependency-free and sets Codex up to auto-update smoothly
 - Seed [AGENTS.md](https://github.com/sparshsah/foggy-lib/blob/main/AGENTS.md)
 - Install XCode Command Line Tools with `xcode-select --install`
 - Create a `.zshrc` with `touch ~/.zshrc`
+- Install [HomeBrew](https://brew.sh/) with
+  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - Tell zsh to automatically activate it at startup by adding the following to your `~/.zshrc`: `ssh-add --apple-load-keychain`
 - [Add it to GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
