@@ -41,8 +41,6 @@ Important: Make sure these steps are still consistent with latest up-to-date wor
   - Also proceed with any appropriate immediate post-install instructions (environment setup, `brew doctor`, etc).
   - You can periodically update with `brew update && brew upgrade && brew cleanup`.
 - [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-- Let Mac remember your SSH key:
-  `/usr/bin/ssh-add --apple-use-keychain ~/.ssh/id_ed25519`.
 - Seed `~/.ssh/config`:
   ```
   Host github.com
@@ -52,6 +50,8 @@ Important: Make sure these steps are still consistent with latest up-to-date wor
       IdentityFile ~/.ssh/id_ed25519
   ```
   .
+- Let Mac remember your SSH key:
+  `/usr/bin/ssh-add --apple-use-keychain ~/.ssh/id_ed25519`.
 - [Add your SSH key to GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 - Add GitHub to known hosts:
   Run `ssh -T git@github.com`;
