@@ -33,7 +33,7 @@ but are generally pretty safe.
 These can be driven by an AI agent consulting the human owner as appropriate.
 Important: Make sure these steps are still consistent with latest up-to-date workflows/recipes!
 
-- Seed [AGENTS.md](https://github.com/sparshsah/foggy-lib/blob/main/AGENTS.md).
+- Seed [AGENTS.md](https://github.com/sparshsah/sparx-lib/blob/main/AGENTS.md).
 - Install XCode Command Line Tools with `xcode-select --install`.
 - Create a `.zshrc` with `touch ~/.zshrc`.
 - Install [HomeBrew](https://brew.sh/) with
