@@ -43,6 +43,7 @@ Important: Make sure these steps are still consistent with latest up-to-date wor
 - `mkdir` your directory structure (e.g. `~/Documents/repos/...`), and `git clone` whatever repos you want
 - [Install Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install/mac-cli-install)
   - Create a fresh Python virtual environment with `conda create --name=py_venv python anaconda`
+  - You can activate it with `conda activate py_venv`
   - You can refresh/update/upgrade everything once in a while with
     `conda deactivate && conda remove --name=py_venv --all && conda update conda && conda create --name=py_venv python anaconda`
 - Prepend to your PATH by adding the following to your `~/.zshrc`: `export PATH=/path/to/your/code:/path/to/more/code:$PATH`
