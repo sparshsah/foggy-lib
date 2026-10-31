@@ -18,7 +18,7 @@ but are generally pretty safe.
   Automatically rearrange Spaces based on most recent use > OFF.
 - Pin `~` to the LHS sidebar in Finder.
 - Finder > Settings > Advanced > Show all filename extensions > ON.
-- Install Google Chrome.
+- Install [Google Chrome](https://www.google.com/chrome/).
   - Set it as your default browser.
   - Make sure AutoFill and Password Manager is OFF.
   - Set file downloads destination to "Ask Every Time".
