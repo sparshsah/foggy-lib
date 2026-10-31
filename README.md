@@ -1,4 +1,4 @@
-# foggyLIB
+# SpARX-Lib
 
 author: [@sparshsah](https://github.com/sparshsah)
 
