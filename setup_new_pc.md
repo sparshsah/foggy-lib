@@ -27,6 +27,7 @@ Important: Make sure these steps are still consistent with latest up-to-date wor
 - Create a `.zshrc` with `touch ~/.zshrc`
 - Install [HomeBrew](https://brew.sh/) with
   `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+  - You can periodically update with `brew update && brew upgrade && brew cleanup`
 - [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - Tell zsh to automatically activate it at startup by adding the following to your `~/.zshrc`: `ssh-add --apple-load-keychain`
 - [Add it to GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
