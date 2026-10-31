@@ -43,11 +43,13 @@ git_rebase() {
 }
 
 _git_rebase_all() {
-  # https://stackoverflow.com/a/70501291
   # ... list all local branches
-  # ... start at char 3 and go to end of line for each line (strip leading "* " or "  ")
+  # ... start at char 3 (to strip leading "* " or "  ")
+  #     and go to end of line for each line
   # ... for each listed branch name, git_rebase it
-  git branch | cut -c 3- | for branch in $(cat); do git_rebase "$branch"; done
+  git branch | cut -c 3- | while read -r branch; do
+    git_rebase "$branch"
+  done
 }
 
 git_rebase_all() {
