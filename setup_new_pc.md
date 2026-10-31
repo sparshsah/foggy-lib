@@ -1,3 +1,6 @@
+Set up a new PC (personal computer),
+which for me usually does NOT run the Microsoft Windows OS.
+
 # macOS
 
 ## Human-Driven Steps
