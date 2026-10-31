@@ -1,5 +1,5 @@
 git_status() {
-  git branch && git status
+  pwd && git branch -vv && git status
 }
 
 git_checkout() {
