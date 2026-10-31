@@ -1,5 +1,7 @@
 # macOS
 
+## Human/Manual Steps
+
 - Turn off fucking AutoCorrect
   - System Settings > Keyboard > Input Sources > Edit > Correct Spelling Automatically
   - System Settings > Keyboard > Input Sources > Text Replacements
@@ -12,6 +14,9 @@
 - Question: How can you manage Terminal background color/transparency as a plist?
 - [Install OpenAI Codex CLI by `curl`ing the standalone script](https://learn.chatgpt.com/docs/codex/cli#getting-started)
   - The standalone script is relatively dependency-free and sets Codex up to auto-update smoothly
+
+## Agent-Driven Steps
+
 - Seed [AGENTS.md](https://github.com/sparshsah/foggy-lib/blob/main/AGENTS.md)
 - Install XCode Command Line Tools with `xcode-select --install`
 - Create a `.zshrc` with `touch ~/.zshrc`
