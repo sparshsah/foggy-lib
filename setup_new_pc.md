@@ -68,6 +68,12 @@ Important: Make sure these steps are still consistent with latest up-to-date wor
   - You can activate it with `conda activate py_venv`.
   - You can refresh/update/upgrade everything once in a while with
     `conda deactivate && conda remove --name=py_venv --all && conda update conda && conda create --name=py_venv python anaconda`.
+  - TODO: Evaluate migrating from Anaconda
+    (admittedly bloated/clunky but also convenient for local scientific workflows,
+    esp if you can accept the nuke-everything-and-blind-upgrade routine)
+    to [uv](https://docs.astral.sh/uv/) (with `pyproject.toml` +
+    some HomeBrew-managed cross-dependencies like OpenMP/LibOMP for LightGBM)
+    for lightweight, highly-configurable, reproducible, project-specific venvs.
 - Prepend to your PATH by adding the following to your `~/.zshrc`:
   `export PATH="/path/to/your/code:/path/to/more/code:$PATH"`.
 - [Install VS Code](https://code.visualstudio.com/download),
